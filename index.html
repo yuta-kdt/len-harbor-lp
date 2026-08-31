@@ -36,11 +36,16 @@
     font-family: var(--sans);
     color: var(--ink-700);
     background-color: #EDEBE8;
+  }
+
+  .bg-fixed{
+    position: fixed;
+    inset: 0;
+    z-index: -1;
     background-image: var(--bg-photo);
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
-    background-attachment: fixed;
   }
 
   .veil{
@@ -159,7 +164,7 @@
   .works-grid{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 16px;
+    gap: 30px;
   }
   .works-thumb{ aspect-ratio: 9/16; }
   .video-frame{ position: relative; overflow: hidden; background: #1c1b1a; }
@@ -242,13 +247,19 @@
     letter-spacing: 0.08em;
   }
 
+  .br-mobile{ display: none; }
+
   @media (max-width: 480px){
     section{ padding: 72px 0; }
     .card{ padding: 40px 22px; }
+    .br-mobile{ display: inline; }
+    .about p{ font-size: 14.5px; }
+    .plan-desc{ font-size: 13px; }
   }
 </style>
 </head>
 <body>
+<div class="bg-fixed"></div>
 <div class="veil"></div>
 <div class="wrap">
 
@@ -257,8 +268,8 @@
     <div class="card about">
       <div class="content-col">
         <p class="eyebrow">ABOUT</p>
-        <p>人やモノ、瞬間に触れることで何かを感じ、それが次の誰かや何かへ繋がっていく。<br>そんな連なりを映像を通して支えていきたい。</p>
-        <p>だからこそ、まずは深く知ることから始めます。<br>何を届けたいか、大切にしてきたルーツはなにか。<br>たくさん話し、時間を共有し、心を込めて伴走していきます。</p>
+        <p>人やモノ、瞬間に触れることで何かを感じ、<br class="br-mobile">それが次の誰かや何かへ繋がっていく。<br>そんな連なりを映像を通して支えていきたい。</p>
+        <p>だからこそ、まずは深く知ることから始めます。<br>何を届けたいか、大切にしてきたルーツはなにか。<br>たくさん話し、時間を共有し、心を込めて<br class="br-mobile">伴走していきます。</p>
       </div>
     </div>
   </section>
@@ -286,7 +297,7 @@
           </div>
         </div>
 
-        <p class="works-note">ジャンルを問わず、全国対応。撮影・編集ともに一人で担当しています。</p>
+        <p class="works-note">ジャンルを問わず、全国対応。<br class="br-mobile">撮影・編集ともに一人で担当しています。</p>
       </div>
     </div>
   </section>
@@ -312,7 +323,7 @@
           <span class="plan-name">② スポット</span>
           <span class="plan-price">¥55,000〜（税込）</span>
         </div>
-        <p class="plan-desc">半日密着撮影＋ショート動画1本（〜90秒）。修正1回まで。</p>
+        <p class="plan-desc">半日密着撮影＋ショート動画1本（〜90秒）。<br class="br-mobile">修正1回まで。</p>
         <p class="plan-meta">納期 1週間前後</p>
       </div>
 
@@ -330,11 +341,11 @@
           <span class="plan-name">④ フル</span>
           <span class="plan-price">¥180,000〜（税込）</span>
         </div>
-        <p class="plan-desc">複数日密着取材＋ロング動画1本＋ショート2〜3本＋スチール提供。<br>修正は合理的範囲（本数・尺はご相談に応じて調整）。</p>
+        <p class="plan-desc">複数日密着取材＋ロング動画1本＋ショート2〜3本＋<br class="br-mobile">スチール提供。<br>修正は合理的範囲（本数・尺はご相談に応じて調整）。</p>
         <p class="plan-meta">納期 案件規模に応じてご相談</p>
       </div>
 
-      <p class="pricing-note">※ 上記はあくまで目安です。納品尺や本数、撮影日数などお気軽にご相談ください。</p>
+      <p class="pricing-note">※ 上記はあくまで目安です。納品尺や本数、撮影日数など<br class="br-mobile">お気軽にご相談ください。</p>
       </div>
     </div>
   </section>
