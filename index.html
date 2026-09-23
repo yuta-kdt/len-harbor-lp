@@ -145,15 +145,36 @@
   .about p{ font-size: 15.5px; }
   .content-col{ max-width: 760px; margin: 0 auto; }
   #works .content-col,
-  #pricing .content-col{ max-width: 900px; }
+  #pricing .content-col{ max-width: 800px; }
   .about .tags{
     display:flex; flex-wrap: wrap; gap: 10px; margin-top: 28px;
   }
   .about .tag{
-    font-size: 12px; color: var(--ink-600);
+    font-size: 13.5px; color: var(--ink-700);
+    font-weight: 500;
     border: 1px solid var(--line);
     border-radius: 999px;
-    padding: 6px 14px;
+    padding: 8px 16px;
+  }
+  .title-block{ margin-bottom: 48px; }
+  .brand-label{
+    font-family: var(--sans);
+    font-size: 12px;
+    letter-spacing: 0.28em;
+    color: var(--ink-600);
+    margin: 0 0 8px;
+  }
+  .brand-title{
+    font-family: var(--serif);
+    color: var(--ink-900);
+    font-weight: 600;
+    margin: 0;
+    line-height: 1.5;
+    font-size: clamp(21px, 3.2vw, 27px);
+  }
+  .brand-title .slash{
+    font-family: var(--sans);
+    font-weight: 400;
   }
 
   /* --- Works --- */
@@ -179,7 +200,7 @@
     margin-top: 24px;
     padding-top: 20px;
     border-top: 1px solid var(--line);
-    font-size: 13px;
+    font-size: 15.5px;
     color: var(--ink-600);
   }
 
@@ -283,9 +304,18 @@
   <section id="about">
     <div class="card about">
       <div class="content-col">
+        <div class="title-block">
+          <p class="brand-label">Len Harbor</p>
+          <h1 class="brand-title">小館佑太 <span class="slash">/</span> 映像制作</h1>
+        </div>
         <p class="eyebrow">ABOUT</p>
         <p>人やモノ、瞬間に触れることで何かを感じ、<br class="br-mobile">それが次の誰かや何かへ繋がっていく。<br>そんな連なりを映像を通して支えていきたい。</p>
         <p>だからこそ、まずは深く知ることから始めます。<br>何を届けたいか、大切にしてきたルーツはなにか。<br>たくさん話し、時間を共有し、心を込めて<br class="br-mobile">伴走していきます。</p>
+        <div class="tags">
+          <span class="tag">全国対応</span>
+          <span class="tag">一貫対応</span>
+          <span class="tag">スケジュール柔軟対応</span>
+        </div>
       </div>
     </div>
   </section>
@@ -316,7 +346,7 @@
           </div>
         </div>
 
-        <p class="works-note">ジャンルを問わず、全国対応。<br class="br-mobile">撮影・編集ともに一人で担当しています。</p>
+        <p class="works-note">ジャンルを問わず、全国対応。<br>撮影・編集ともに一人で担当しています。<br>繁忙期・急なご依頼にも、できる限り日程を合わせて対応します。</p>
       </div>
     </div>
   </section>
