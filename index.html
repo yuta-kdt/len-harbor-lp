@@ -236,6 +236,33 @@
     line-height: 1.8;
   }
 
+  /* --- Flow --- */
+  .flow-step{
+    display: flex;
+    gap: 20px;
+    align-items: baseline;
+    border-top: 1px solid var(--line);
+    padding: 22px 0;
+  }
+  .flow-step:first-of-type{ border-top: none; padding-top: 0; }
+  .flow-num{
+    font-family: var(--serif);
+    font-size: 17px;
+    color: var(--ink-400);
+    min-width: 1.6em;
+  }
+  .flow-title{
+    font-family: var(--serif);
+    font-size: 17px;
+    color: var(--ink-900);
+    margin: 0 0 4px;
+  }
+  .flow-desc{ font-size: 13.5px; line-height: 1.9; margin: 0; }
+  @media (max-width: 480px){
+    .flow-step{ gap: 14px; }
+    .flow-desc{ font-size: 13px; }
+  }
+
   /* --- CTA --- */
   .cta{ text-align: center; }
   .cta p{ max-width: 48ch; margin-left:auto; margin-right:auto; }
@@ -406,6 +433,66 @@
     </div>
   </section>
 
+  <!-- ============ FLOW ============ -->
+  <section id="flow">
+    <div class="card">
+      <div class="content-col">
+        <p class="eyebrow">FLOW</p>
+        <h2>ご依頼の流れ</h2>
+
+        <div class="flow-step">
+          <span class="flow-num">01</span>
+          <div>
+            <p class="flow-title">ご相談</p>
+            <p class="flow-desc">Instagram DMで、ご要望やお悩みをお気軽にお聞かせください。</p>
+          </div>
+        </div>
+
+        <div class="flow-step">
+          <span class="flow-num">02</span>
+          <div>
+            <p class="flow-title">お打ち合わせ</p>
+            <p class="flow-desc">初回は無料です。内容や雰囲気を、ゆっくりお聞きします。</p>
+          </div>
+        </div>
+
+        <div class="flow-step">
+          <span class="flow-num">03</span>
+          <div>
+            <p class="flow-title">お見積り</p>
+            <p class="flow-desc">内容と金額をご提示します。ご納得いただけてから進めます。</p>
+          </div>
+        </div>
+
+        <div class="flow-step">
+          <span class="flow-num">04</span>
+          <div>
+            <p class="flow-title">撮影</p>
+            <p class="flow-desc">日程を調整して撮影します。</p>
+          </div>
+        </div>
+
+        <div class="flow-step">
+          <span class="flow-num">05</span>
+          <div>
+            <p class="flow-title">編集・確認</p>
+            <p class="flow-desc">映像をご確認いただき、プランの回数内で修正します。</p>
+          </div>
+        </div>
+
+        <div class="flow-step">
+          <span class="flow-num">06</span>
+          <div>
+            <p class="flow-title">納品・お支払い</p>
+            <p class="flow-desc">納品後に請求書をお送りします。</p>
+          </div>
+        </div>
+
+        <p class="pricing-note">※ 旭川市内・東神楽町・鷹栖町・東川町・美瑛町での初回お打ち合わせは無料です。<br class="br-mobile">それ以外の地域は、対面の場合のみ往復交通費の実費を頂戴します（オンラインは無料）。</p>
+      </div>
+    </div>
+  </section>
+
   <!-- ============ CTA ============ -->
   <section id="cta">
     <div class="card cta">
@@ -431,6 +518,7 @@
     <a href="#about">ABOUT</a>
     <a href="#works">WORKS</a>
     <a href="#pricing">PRICE LIST</a>
+    <a href="#flow">FLOW</a>
     <a href="#cta">CONTACT</a>
   </footer>
 
